@@ -8,11 +8,7 @@ let param = process.argv[2].slice(1);
 
 const url = path.join(process.cwd(),param);
 
-if(fs.existsSync(url){
-    if(fs.statSync(url).isDirectory()){
-        console.log()
-    }
-})
+
 if(fs.existsSync(url)){
     if(fs.statSync(url).isDirectory()){
         let dirList = fs.readdirSync(url);
